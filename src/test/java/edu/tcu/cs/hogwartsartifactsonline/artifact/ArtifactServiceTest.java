@@ -111,7 +111,7 @@ class ArtifactServiceTest {
 
         // Then
         assertThat(thrown)
-                .isInstanceOf(ObjectNotFoundException.class)
+                .isInstanceOf(ArtifactNotFoundException.class)
                 .hasMessage("Could not find artifact with Id 1250808601744904192 :(");
         verify(this.artifactRepository, times(1)).findById("1250808601744904192");
     }
