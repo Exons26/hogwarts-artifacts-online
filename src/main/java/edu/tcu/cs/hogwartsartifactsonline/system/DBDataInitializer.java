@@ -79,6 +79,6 @@ public class DBDataInitializer implements CommandLineRunner {
         wizardRepository.save(w3);
 
         artifactRepository.save(a6);
-
     }
+
 }
